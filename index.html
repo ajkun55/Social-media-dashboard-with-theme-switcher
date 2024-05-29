@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./styles.css" class="css">
+</head>
+<body>
+
+  <main>
+    <header>
+      <div class="title">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="choice">
+        <span>Dark Mode</span>
+        <label class="switch" >
+          <input type="checkbox" onclick="myFunction()">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="social-media">
+      <div class="card" id="facebook">
+        <div class="account">
+          <img src="./images/icon-facebook.svg" alt="">
+          <p>@nathanf</p>
+        </div>
+        <p class="number">1987</p>
+        <p class="followers">Followers</p>
+        <p class="change">
+          <img src="./images/icon-up.svg" alt=""><span>12 Today</span>
+        </p>
+      </div>
+      
+      <div class="card" id="twitter">
+        <div class="account">
+          <img src="./images/icon-twitter.svg" alt="">
+          <p>@nathanf</p>
+        </div>
+        <p class="number">1044</p>
+        <p class="followers">Followers</p>
+        <p class="change">
+          <img src="./images/icon-up.svg" alt=""><span>99 Today</span>
+        </p>
+      </div>
+      
+      <div class="card" id="insta">
+        <div class="account">
+          <img src="./images/icon-instagram.svg" alt="">
+          <p>@realnathanf</p>
+        </div>
+        <p class="number">11k</p>
+        <p class="followers">Followers</p>
+        <p class="change">
+          <img src="./images/icon-up.svg" alt=""><span>1099 Today</span>
+        </p>
+      </div>
+ 
+      <div class="card" id="youtube">
+        <div class="account">
+          <img src="./images/icon-youtube.svg" alt="">
+          <p>Nathan F.</p>
+        </div>
+        <p class="number">8239</p>
+        <p class="followers">Subscribers</p>
+        <p class="change down">
+          <img src="./images/icon-down.svg" alt=""><span>144 Today</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="overview">
+      <p class="today">Overview - Today</p> 
+      
+      
+
+      <div class="cards">
+        <div class="card">
+          <div class="row">
+            <p class="variety">Page Views</p>
+            <img src="./images/icon-facebook.svg" alt="">
+          </div>
+          <div class="row">
+            <p class="value">87</p>
+            <p class="percent green"><img src="./images/icon-up.svg" alt="">3%</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <p class="variety">Likes</p>
+            <img src="./images/icon-facebook.svg" alt="">
+          </div>
+          <div class="row">
+            <p class="value">52</p>
+            <p class="percent red"><img src="./images/icon-down.svg" alt="">2%</p>
+          </div>
+        </div> 
+
+        <div class="card">
+          <div class="row">
+            <p class="variety">Likes</p>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div class="row">
+            <p class="value">5462</p>
+            <p class="percent green"><img src="./images/icon-up.svg" alt="">2257%</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <p class="variety">Profile Views</p>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div class="row">
+            <p class="value">52k</p>
+            <p class="percent green"><img src="./images/icon-up.svg" alt="">1375%</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <p class="variety">Retweets</p>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div class="row">
+            <p class="value">117</p>
+            <p class="percent green"><img src="./images/icon-up.svg" alt="">303%</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <p class="variety">Likes</p>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div class="row">
+            <p class="value">507</p>
+            <p class="percent green"><img src="./images/icon-up.svg" alt="">553%</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <p class="variety">Likes</p>
+            <img src="./images/icon-youtube.svg" alt="">
+          </div>
+          <div class="row">
+            <p class="value">107</p>
+            <p class="percent red"><img src="./images/icon-down.svg" alt="">19%</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <p class="variety">Total Views</p>
+            <img src="./images/icon-youtube.svg" alt="">
+          </div>
+          <div class="row">
+            <p class="value">1407</p>
+            <p class="percent red"><img src="./images/icon-down.svg" alt="">12%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/ajkun55/Social-media-dashboard-with-theme-switcher">John A</a>.
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
